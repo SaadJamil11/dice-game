@@ -8,10 +8,10 @@ function rollDice() {
 
     // Check win condition
     if (roll > 2) {
-        message.textContent = `You rolled a ${roll}! You win! still Fu-K You 🎉`;
+        message.textContent = `You rolled a ${roll}! You win! still eat it-- You 🎉`;
         message.style.color = 'green';
     } else {
-        message.textContent = `You rolled a ${roll}. Oh no! You lose. Fk-in Looser! 😢`;
+        message.textContent = `You rolled a ${roll}. Oh no! You lose. Looser! 😢`;
         message.style.color = 'red';
     }
 }
