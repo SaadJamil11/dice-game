@@ -1,20 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dice Game</title>
-    <script>
-        function rollDice() {
-            // This is JavaScript, not Python
-            const diceValue = Math.floor(Math.random() * 6) + 1;
-            document.getElementById("result").innerText = `You rolled a ${diceValue}!`;
-        }
-    </script>
-</head>
-<body>
-    <h1>Dice Game</h1>
-    <button onclick="rollDice()">Roll Dice</button>
-    <p id="result"></p>
-</body>
-</html>
+function rollDice() {
+    const roll = Math.floor(Math.random() * 6) + 1;
+    const dice = document.getElementById('dice');
+    const message = document.getElementById('message');
+
+    // Display dice face
+    dice.textContent = getDiceFace(roll);
+
+    // Check win condition
+    if (roll > 2) {
+        message.textContent = `You rolled a ${roll}! Congratulations, you win! 🎉`;
+        message.style.color = 'green';
+    } else {
+        message.textContent = `You rolled a ${roll}. Oh no, you lose! 😢`;
+        message.style.color = 'red';
+    }
+}
+
+function getDiceFace(number) {
+    const diceFaces = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅'];
+    return diceFaces[number - 1];
+}
+
 
 
