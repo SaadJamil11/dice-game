@@ -1,2 +1,2 @@
-Introduction: This is a very simple dice game and was built using random generator.
-Purpose: Share with friends to surprize them.
+Introduction: This is a straightforward dice game and was built using a random generator.
+Purpose: Share with friends to surprise them.
